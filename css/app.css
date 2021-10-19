@@ -1,0 +1,147 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+}
+
+main{
+  height: 100%;
+}
+
+body{
+         font-family: 'Prompt', sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #EAF8E1;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  place-items: center;
+  text-align: center;
+
+  padding: 3rem;
+  transition: all 0.4s;
+  z-index: 1;
+background-image: url("icon two test.png");
+}
+.overlay h1 {
+  margin: 0;
+    font-family: 'Prompt', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size:3rem;
+  line-height: 1;
+}
+.overlay p {
+  font-size: 2rem;
+    color: #707070;
+}
+.overlay button {
+  border: 0;
+  background-color: #666;
+  color: #fff;
+  line-height: 3;
+ font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.125rem 1.5rem 0;
+  letter-spacing: 1px;
+}
+
+.open {
+  transform: translateY(-100%);
+}
+
+.MainSection{
+    height:100vh;
+}
+
+.CurrentInfo{
+ height:100vh;
+    display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:auto auto auto;
+  padding:1rem;
+  background-color: #EAF8E1;
+}
+
+.LocationInfo{
+  font-size:2rem;
+    text-transform:uppercase;
+  font-family: 'Scada', sans-serif;
+}
+.TheDate{
+   text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight:200;
+  font-size:1rem;
+}
+
+.CurrentTemp{
+  font-size:6rem;
+  font-weight:700;
+ 
+color: #707070;
+}
+.WeatherDescrip{
+  font-size:2rem;
+    text-transform:uppercase;
+  font-weight:400;
+}
+.High{
+    text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight:200;
+}
+.Low{
+    text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+    font-weight:200;
+}
+
+.LowTemp{
+    text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight:700;
+}
+
+.HighTemp{
+    text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight:700;
+}
+img{
+    place-items: center;
+  text-align: center;
+}
+.ExtendedForecast{
+  height:100vh;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.row{
+  display:grid;
+  grid-template-rows:1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+  text-align: center;
+  
+}
+.Day2, .Day4, .Day6{
+  background:#707070;
+  color:white;
+}
+.Day1, .Day3, .Day5{
+  background:#707070;
+  color:white;
+}
+.DayIcon{
+  color:white;
+  font-size:2rem;
+}
