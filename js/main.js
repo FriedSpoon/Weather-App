@@ -18,21 +18,60 @@ function weatherBalloon() {
 
 // display weather information
 function drawWeather( d ) {
-
-
-$('.CurrentInfo .CurrentTemp').html(convertTemp(d.current.temp));
-
-d.daily[1].temp.max
-
-$('.ExtendedForecast .Day1 .DayName').html( displayDay(1));
-$('.ExtendedForecast .Day2 .DayName').html( displayDay(2));
-$('.ExtendedForecast .Day3 .DayName').html( displayDay(3));
-$('.ExtendedForecast .Day4 .DayName').html( displayDay(4));
-$('.ExtendedForecast .Day5 .DayName').html( displayDay(5));
-$('.ExtendedForecast .Day6 .DayName').html( displayDay(6));
 $('button').click(function(){
   $('.overlay').addClass('open');
 })
+
+//Current Day
+$('.CurrentInfo .CurrentTemp').html(convertTemp(d.current.temp));
+$('.CurrentInfo .HighTemp').html(convertTemp(d.daily[0].temp.max));
+$('.CurrentInfo .LowTemp').html(convertTemp(d.daily[0].temp.min));
+
+
+
+d.daily[1].temp.max
+//day one
+$('.ExtendedForecast .Day1 .DayName').html( displayDay(1));
+$('.ExtendedForecast .Day1 .DayHigh').html(convertTemp(d.daily[1].temp.max));
+$('.ExtendedForecast .Day1 .Daylow').html(convertTemp(d.daily[1].temp.min));
+
+
+
+//day two
+$('.ExtendedForecast .Day2 .DayName').html( displayDay(2));
+$('.ExtendedForecast .Day2 .DayHigh').html(convertTemp(d.daily[2].temp.max));
+$('.ExtendedForecast .Day2 .Daylow').html(convertTemp(d.daily[2].temp.min));
+
+
+
+//day three
+$('.ExtendedForecast .Day3 .DayName').html( displayDay(3));
+$('.ExtendedForecast .Day3 .DayHigh').html(convertTemp(d.daily[3].temp.max));
+$('.ExtendedForecast .Day3 .Daylow').html(convertTemp(d.daily[3].temp.min));
+
+
+
+//day four
+$('.ExtendedForecast .Day4 .DayName').html( displayDay(4));
+$('.ExtendedForecast .Day4 .DayHigh').html(convertTemp(d.daily[4].temp.max));
+$('.ExtendedForecast .Day4 .DayLow').html(convertTemp(d.daily[4].temp.min));
+
+
+
+//day five
+$('.ExtendedForecast .Day5 .DayName').html( displayDay(5));
+$('.ExtendedForecast .Day5 .DayHigh').html(convertTemp(d.daily[5].temp.max));
+$('.ExtendedForecast .Day5 .DayLow').html(convertTemp(d.daily[5].temp.min));
+
+//day six
+$('.ExtendedForecast .Day6 .DayName').html( displayDay(6));
+$('.ExtendedForecast .Day6 .DayHigh').html(convertTemp(d.daily[6].temp.max));
+$('.ExtendedForecast .Day6 .DayLow').html(convertTemp(d.daily[6].temp.min));
+
+
+
+
+
 
   // add your specfic weather requests here
 
@@ -155,7 +194,7 @@ function displayDay(n){
   weekday[3] = "Wed";
   weekday[4] = "Thu";
   weekday[5] = "Fri";
-  weekday[6] = "Sun";
+  weekday[6] = "Sat";
 
   var dispDay = d.getDay() + n;
 

@@ -59,16 +59,16 @@ background-image: url("icon two test.png");
 
 .MainSection{
     height:100vh;
+          
 }
 
 .CurrentInfo{
- height:100vh;
-    display:grid;
-  grid-template-columns:1fr;
-  grid-template-rows:repeat(9, auto) ;
-
+  height: 100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:repeat(8, auto);
   padding:1rem;
-  background-color: #EAF8E1;
+  background-color: #EAF8F1;
 }
 
 .LocationInfo{
@@ -81,47 +81,64 @@ background-image: url("icon two test.png");
   font-family: 'Prompt', sans-serif;
   font-weight:200;
   font-size:1rem;
+  grid-row: 2;
 }
 
 .CurrentTemp{
-  font-size:6rem;
+  font-size:5rem;
   font-weight:700;
- 
+ grid-row: 3;
 color: #707070;
+
 }
+
 .WeatherDescrip{
   font-size:2rem;
     text-transform:uppercase;
   font-weight:400;
+  grid-row: 4;
 }
-.High, .Low, .LowTemp, .HighTemp{
+.Low, .LowTemp, .HighTemp{
+
 }
+
 
 .High{
     text-transform:uppercase;
   font-family: 'Prompt', sans-serif;
   font-weight:200;
+  grid-row: 7;
 }
 .Low{
     text-transform:uppercase;
   font-family: 'Prompt', sans-serif;
     font-weight:200;
+    grid-row: 7;
+    grid-column: 2;
 }
 
 .LowTemp{
     text-transform:uppercase;
   font-family: 'Prompt', sans-serif;
   font-weight:700;
-}
+  grid-row: 8;
+  grid-column: 2;
+  }
 
 .HighTemp{
     text-transform:uppercase;
   font-family: 'Prompt', sans-serif;
   font-weight:700;
+  grid-row: 8;
 }
-img{
-    place-items: center;
+.snow_fox{
+ 
+  grid-row: 5;
+}
+.High, .HighTemp, .Low, .LowTemp{
+   place-items: center;
   text-align: center;
+
 }
 .ExtendedForecast{
   height:100vh;
@@ -142,7 +159,7 @@ img{
   color:white;
 }
 .Day1, .Day3, .Day5{
-  background:#707070;
+  background:#707078;
   color:white;
 }
 .DayIcon{
