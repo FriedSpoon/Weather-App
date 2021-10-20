@@ -65,7 +65,8 @@ background-image: url("icon two test.png");
  height:100vh;
     display:grid;
   grid-template-columns:1fr;
-  grid-template-rows:auto auto auto;
+  grid-template-rows:repeat(9, auto) ;
+
   padding:1rem;
   background-color: #EAF8E1;
 }
@@ -93,6 +94,9 @@ color: #707070;
     text-transform:uppercase;
   font-weight:400;
 }
+.High, .Low, .LowTemp, .HighTemp{
+}
+
 .High{
     text-transform:uppercase;
   font-family: 'Prompt', sans-serif;
