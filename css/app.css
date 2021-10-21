@@ -133,8 +133,10 @@ color: #707070;
   grid-row: 8;
 }
 .snow_fox{
- 
+ grid-column: 1/span 2;
    grid-row: 5;
+   display: block;
+   margin: auto;
 }
 .High, .HighTemp, .Low, .LowTemp{
    place-items: center;
