@@ -70,10 +70,11 @@ background-image: url("icon two test.png");
   grid-template-rows:repeat(8, auto);
   padding:1rem;
   background-color: #EAF8F1;
+
 }
 
 .LocationInfo{
-  font-size:2rem;
+  font-size:1.8rem;
     text-transform:uppercase;
   font-family: 'Scada', sans-serif;
 }
@@ -146,10 +147,34 @@ color: #707070;
 .ExtendedForecast{
   height:100vh;
   display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr
+  place-items: center;
+  text-align: center;
+}
+.rainy{
+background-image: ;
+}
+
+.snowy{
+background-image: ;
+}
+
+.cloudy{
+background-image: ;
+}
+
+.sunny{
+background-image: ;
+}
+
+./ExtendedForecast{
+  height:100vh;
+  display:grid;
   grid-template-columns:1fr;
   grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.row{
+./row{
   display:grid;
   grid-template-rows:1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -167,5 +192,5 @@ color: #707070;
 }
 .DayIcon{
   color:white;
-  font-size:2rem;
+  font-size:4rem;
 }

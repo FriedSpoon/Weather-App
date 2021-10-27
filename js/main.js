@@ -28,26 +28,27 @@ $('.CurrentInfo .HighTemp').html(convertTemp(d.daily[0].temp.max));
 $('.CurrentInfo .LowTemp').html(convertTemp(d.daily[0].temp.min));
 
 
+changeTheme(d.current.weather[0].description);
 
-d.daily[1].temp.max
+//d.daily[1].temp.max
 //day one
 $('.ExtendedForecast .Day1 .DayName').html( displayDay(1));
 $('.ExtendedForecast .Day1 .DayHigh').html(convertTemp(d.daily[1].temp.max));
-$('.ExtendedForecast .Day1 .Daylow').html(convertTemp(d.daily[1].temp.min));
+$('.ExtendedForecast .Day1 .DayLow').html(convertTemp(d.daily[1].temp.min));
 
 
 
 //day two
 $('.ExtendedForecast .Day2 .DayName').html( displayDay(2));
 $('.ExtendedForecast .Day2 .DayHigh').html(convertTemp(d.daily[2].temp.max));
-$('.ExtendedForecast .Day2 .Daylow').html(convertTemp(d.daily[2].temp.min));
+$('.ExtendedForecast .Day2 .DayLow').html(convertTemp(d.daily[2].temp.min));
 
 
 
 //day three
 $('.ExtendedForecast .Day3 .DayName').html( displayDay(3));
 $('.ExtendedForecast .Day3 .DayHigh').html(convertTemp(d.daily[3].temp.max));
-$('.ExtendedForecast .Day3 .Daylow').html(convertTemp(d.daily[3].temp.min));
+$('.ExtendedForecast .Day3 .DayLow').html(convertTemp(d.daily[3].temp.min));
 
 
 
@@ -102,6 +103,10 @@ function changeTheme(d){
   // if the description includes the word "cloud"
   } else if( d.indexOf('cloud') > 0 ) {
     $('body').addClass('cloudy');
+
+      // if the description includes the word "cloud"
+  } else if( d.indexOf('snow') > 0 ) {
+    $('body').addClass('snow');
 
   // if the description includes the word "sunny"  
   } else if( d.indexOf('sunny') > 0 ) {
