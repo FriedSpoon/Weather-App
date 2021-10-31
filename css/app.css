@@ -77,6 +77,9 @@ background-image: url("icon two test.png");
   font-size:1.8rem;
     text-transform:uppercase;
   font-family: 'Scada', sans-serif;
+  grid-row: 2;
+  grid-column: 1;
+   
 }
 .TheDate{
    text-transform:uppercase;
@@ -84,12 +87,15 @@ background-image: url("icon two test.png");
   font-weight:200;
   font-size:1rem;
   grid-row: 2;
+   grid-column: 1;
+   padding-top: 3rem;
 }
 
 .CurrentTemp{
   font-size:5rem;
   font-weight:700;
  grid-row: 3;
+ grid-column: 1;
 color: #707070;
 
 }
@@ -98,7 +104,9 @@ color: #707070;
   font-size:2rem;
     text-transform:uppercase;
   font-weight:400;
-  grid-row: 4;
+  grid-row: 3;
+  grid-column: 1;
+  padding-top: 6rem;
 }
 .Low, .LowTemp, .HighTemp{
 
@@ -117,6 +125,18 @@ color: #707070;
     font-weight:200;
     grid-row: 7;
     grid-column: 2;
+}
+.ext-High{
+    text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight:200;
+
+}
+.ext-Low{
+    text-transform:uppercase;
+  font-family: 'Prompt', sans-serif;
+    font-weight:200;
+    
 }
 
 .LowTemp{
@@ -150,9 +170,7 @@ color: #707070;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-      align-items: center;
-     justify-items: center;
-     align-content: center;
+      
 
 
 }
@@ -178,14 +196,10 @@ background-image: ;
   grid-template-columns:1fr;
   grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
 }
-./row{
-  display:grid;
-  grid-template-rows:1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   justify-items: center;
-    place-items: center;
-  text-align: center;
-  
+.row{
+align-self: center;
+justify-self: center;
+
 }
 .Day2, .Day4, .Day6{
   /background:#707070;
