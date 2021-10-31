@@ -145,12 +145,16 @@ color: #707070;
 
 }
 .ExtendedForecast{
+  background:#707070;
   height:100vh;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr
-  place-items: center;
-  text-align: center;
+  grid-template-rows: 1fr 1fr;
+      align-items: center;
+     justify-items: center;
+     align-content: center;
+
+
 }
 .rainy{
 background-image: ;
@@ -178,16 +182,17 @@ background-image: ;
   display:grid;
   grid-template-rows:1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-items: center;
     place-items: center;
   text-align: center;
   
 }
 .Day2, .Day4, .Day6{
-  background:#707070;
+  /background:#707070;
   color:white;
 }
 .Day1, .Day3, .Day5{
-  background:gray;
+  /background:gray;
   color:white;
 }
 .DayIcon{
