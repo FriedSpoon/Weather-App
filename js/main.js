@@ -22,6 +22,8 @@ $('button').click(function(){
   $('.overlay').addClass('open');
 })
 
+//https://i.postimg.cc/tg3vj3V7/NEWICONONE.png
+
 //Current Day
 $('.CurrentInfo .CurrentTemp').html(convertTemp(d.current.temp));
 $('.CurrentInfo .HighTemp').html(convertTemp(d.daily[0].temp.max));
@@ -29,7 +31,7 @@ $('.CurrentInfo .LowTemp').html(convertTemp(d.daily[0].temp.min));
 
 
 changeTheme(d.current.weather[0].description);
-
+https://i.postimg.cc/tg3vj3V7/NEWICONONE.png
 //d.daily[1].temp.max
 //day one
 $('.ExtendedForecast .Day1 .DayName').html( displayDay(1));
