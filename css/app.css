@@ -29,9 +29,7 @@ background-image: url("icon two test.png");
 }
 .overlay h1 {
   margin: 0;
-    font-family: 'Prompt', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Gluten', cursive;  font-weight: 900;
   font-size:2.5rem;
   line-height: 1;
   grid-row: 2;
@@ -40,6 +38,7 @@ background-image: url("icon two test.png");
 .overlay p {
   font-size: 1.5rem;
     color: #707070;
+    font-family: 'Gluten', cursive;  font-weight: 900;
 
 }
 .overlay button {
@@ -69,7 +68,8 @@ background-image: url("icon two test.png");
 
 .MainSection{
     height:100vh;
-          
+              font-family: 'Gluten', cursive;  font-weight: 900;
+
 }
 
 .CurrentInfo{
@@ -78,22 +78,24 @@ background-image: url("icon two test.png");
   grid-template-columns:1fr 1fr;
   grid-template-rows:repeat(8, auto);
   padding:1rem;
-  background-color: #EAF8F1;
+  background-color: #C8E3D6;
+  background-image: url(https://i.postimg.cc/Nf5cGJtK/snow.png);
+   background-size: cover;
+   background-repeat: repeat;
 
 }
 
 .LocationInfo{
   font-size:1.8rem;
     text-transform:uppercase;
-  font-family: 'Scada', sans-serif;
+    font-family: 'Gluten', cursive;  font-weight: 900;
   grid-row: 2;
   grid-column: 1;
    
 }
 .TheDate{
    text-transform:uppercase;
-  font-family: 'Prompt', sans-serif;
-  font-weight:200;
+    font-family: 'Gluten', cursive;  font-weight: 900;
   font-size:1rem;
   grid-row: 2;
    grid-column: 1;
@@ -169,6 +171,7 @@ color: #707070;
    margin: auto;
    width: 50%;
    height: auto;
+   
 }
 .High, .HighTemp, .Low, .LowTemp{
    place-items: center;
