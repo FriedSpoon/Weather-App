@@ -17,7 +17,7 @@ body{
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #EAF8E1;
+  background-color: #B9ECD3;
   display: grid;
   place-items: center;
   text-align: center;
@@ -78,11 +78,11 @@ background-image: url("icon two test.png");
   grid-template-columns:1fr 1fr;
   grid-template-rows:repeat(8, auto);
   padding:1rem;
-  background-color: #C8E3D6;
-  background-image: url(https://i.postimg.cc/Nf5cGJtK/snow.png);
-   background-size: cover;
-   background-repeat: repeat;
-
+  background-color: #DBF2E7;
+  background-image: url(https://i.postimg.cc/C53j9rYR/Snow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
 }
 
 .LocationInfo{
@@ -169,7 +169,7 @@ color: #707070;
    grid-row: 5;
    display: block;
    margin: auto;
-   width: 50%;
+   width: 80%;
    height: auto;
    
 }
@@ -179,11 +179,15 @@ color: #707070;
 
 }
 .ExtendedForecast{
-  background:#707070;
+  background:#E8EBEE;
   height:100vh;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  background-image: url(https://i.postimg.cc/4xQfRyVJ/Snow1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
 }
 .rainy{
 background-image: url("https://i.postimg.cc/tg3vj3V7/NEWICONONE.png");
@@ -214,13 +218,13 @@ justify-self: center;
 }
 .Day2, .Day4, .Day6{
   /background:#707070;
-  color:white;
+  color:#707070;
 }
 .Day1, .Day3, .Day5{
   /background:gray;
-  color:white;
+  color:#707070;
 }
 .DayIcon{
-  color:white;
+  color:#707070;
   font-size:4rem;
 }
