@@ -30,20 +30,24 @@ $('.CurrentInfo .HighTemp').html(convertTemp(d.daily[0].temp.max));
 $('.CurrentInfo .LowTemp').html(convertTemp(d.daily[0].temp.min));
 
 
-changeTheme(d.current.weather[0].description);
+
 https://i.postimg.cc/tg3vj3V7/NEWICONONE.png
 //d.daily[1].temp.max
 //day one
 $('.ExtendedForecast .Day1 .DayName').html( displayDay(1));
 $('.ExtendedForecast .Day1 .DayHigh').html(convertTemp(d.daily[1].temp.max));
 $('.ExtendedForecast .Day1 .DayLow').html(convertTemp(d.daily[1].temp.min));
-
+$('.ExtendedForecast .Day1 .fass').html( printGraphic(d.daily[1].weather[0].
+description) )
 
 
 //day two
 $('.ExtendedForecast .Day2 .DayName').html( displayDay(2));
 $('.ExtendedForecast .Day2 .DayHigh').html(convertTemp(d.daily[2].temp.max));
 $('.ExtendedForecast .Day2 .DayLow').html(convertTemp(d.daily[2].temp.min));
+$('.ExtendedForecast .Day2 .fass').html( printGraphic(d.daily[2].weather[0].
+description) )
+
 
 
 
@@ -51,6 +55,9 @@ $('.ExtendedForecast .Day2 .DayLow').html(convertTemp(d.daily[2].temp.min));
 $('.ExtendedForecast .Day3 .DayName').html( displayDay(3));
 $('.ExtendedForecast .Day3 .DayHigh').html(convertTemp(d.daily[3].temp.max));
 $('.ExtendedForecast .Day3 .DayLow').html(convertTemp(d.daily[3].temp.min));
+$('.ExtendedForecast .Day3 .fass').html( printGraphic(d.daily[3].weather[0].
+description) )
+
 
 
 
@@ -58,6 +65,9 @@ $('.ExtendedForecast .Day3 .DayLow').html(convertTemp(d.daily[3].temp.min));
 $('.ExtendedForecast .Day4 .DayName').html( displayDay(4));
 $('.ExtendedForecast .Day4 .DayHigh').html(convertTemp(d.daily[4].temp.max));
 $('.ExtendedForecast .Day4 .DayLow').html(convertTemp(d.daily[4].temp.min));
+$('.ExtendedForecast .Day4 .fass').html( printGraphic(d.daily[4].weather[0].
+description) )
+
 
 
 
@@ -65,11 +75,16 @@ $('.ExtendedForecast .Day4 .DayLow').html(convertTemp(d.daily[4].temp.min));
 $('.ExtendedForecast .Day5 .DayName').html( displayDay(5));
 $('.ExtendedForecast .Day5 .DayHigh').html(convertTemp(d.daily[5].temp.max));
 $('.ExtendedForecast .Day5 .DayLow').html(convertTemp(d.daily[5].temp.min));
+$('.ExtendedForecast .Day5 .fass').html( printGraphic(d.daily[5].weather[0].
+description) )
+
 
 //day six
 $('.ExtendedForecast .Day6 .DayName').html( displayDay(6));
 $('.ExtendedForecast .Day6 .DayHigh').html(convertTemp(d.daily[6].temp.max));
 $('.ExtendedForecast .Day6 .DayLow').html(convertTemp(d.daily[6].temp.min));
+$('.ExtendedForecast .Day6 .fass').html( printGraphic(d.daily[6].weather[0].
+description) )
 
 
 

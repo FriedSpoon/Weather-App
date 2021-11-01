@@ -181,24 +181,21 @@ color: #707070;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-      
-
-
 }
 .rainy{
-background-image: ;
+background-image: url("https://i.postimg.cc/tg3vj3V7/NEWICONONE.png");
 }
 
 .snowy{
-background-image: ;
+background-image: url("https://i.postimg.cc/FRGPfhp4/NEWICONTWO.png");
 }
 
 .cloudy{
-background-image: ;
+background-image: url("");
 }
 
 .sunny{
-background-image: ;
+background-image: url("");
 }
 
 ./ExtendedForecast{
