@@ -28,6 +28,9 @@ $('button').click(function(){
 $('.CurrentInfo .CurrentTemp').html(convertTemp(d.current.temp));
 $('.CurrentInfo .HighTemp').html(convertTemp(d.daily[0].temp.max));
 $('.CurrentInfo .LowTemp').html(convertTemp(d.daily[0].temp.min));
+$('.sunrise-weather-info .sunrise-time').html(convertTime(d.current.sunrise));
+$('.sunset-weather-info .sunset-time').html(convertTime(d.current.sunset));
+$('.rain-chance .rain-chance-tag').html(convertTemp(d.daily[0].pop));
 
 
 
